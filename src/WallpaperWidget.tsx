@@ -118,93 +118,93 @@ const wallpaperCategories: WallpaperCategory[] = [
     wallpapers: [
       {
         id: 1,
-        url: 'https://images.nasa.gov/images/earth_blue_marble.jpg',
-        title: 'Blue Marble',
-        thumbnail: 'https://images.nasa.gov/images/earth_blue_marble.jpg'
+        url: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1920&h=1080&q=80',
+        title: 'Blue Marble Earth',
+        thumbnail: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=400&q=80'
       },
       {
         id: 2,
-        url: 'https://images.nasa.gov/images/galaxy_ngc_1300.jpg',
+        url: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1920&h=1080&q=80',
         title: 'Galaxy NGC 1300',
-        thumbnail: 'https://images.nasa.gov/images/galaxy_ngc_1300.jpg'
+        thumbnail: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80'
       },
       {
         id: 3,
-        url: 'https://images.nasa.gov/images/nebula_carina.jpg',
+        url: 'https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=1920&h=1080&q=80',
         title: 'Carina Nebula',
-        thumbnail: 'https://images.nasa.gov/images/nebula_carina.jpg'
+        thumbnail: 'https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=400&q=80'
       },
       {
         id: 4,
-        url: 'https://images.nasa.gov/images/milky_way.jpg',
+        url: 'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1920&h=1080&q=80',
         title: 'Milky Way',
-        thumbnail: 'https://images.nasa.gov/images/milky_way.jpg'
+        thumbnail: 'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=400&q=80'
       },
       {
         id: 5,
-        url: 'https://images.nasa.gov/images/deep_field.jpg',
+        url: 'https://images.unsplash.com/photo-1543722530-d2c3201371e7?auto=format&fit=crop&w=1920&h=1080&q=80',
         title: 'Hubble Deep Field',
-        thumbnail: 'https://images.nasa.gov/images/deep_field.jpg'
+        thumbnail: 'https://images.unsplash.com/photo-1543722530-d2c3201371e7?auto=format&fit=crop&w=400&q=80'
       },
       {
         id: 6,
-        url: 'https://images.nasa.gov/images/orion_nebula.jpg',
+        url: 'https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Orion Nebula',
-        thumbnail: 'https://images.nasa.gov/images/orion_nebula.jpg'
+        thumbnail: 'https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 7,
-        url: 'https://images.nasa.gov/images/galactic_center.jpg',
+        url: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Galactic Center',
-        thumbnail: 'https://images.nasa.gov/images/galactic_center.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 8,
-        url: 'https://images.nasa.gov/images/nebula_eagle.jpg',
+        url: 'https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Eagle Nebula',
-        thumbnail: 'https://images.nasa.gov/images/nebula_eagle.jpg'
+        thumbnail: 'https://images.pexels.com/photos/2156/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 9,
-        url: 'https://images.nasa.gov/images/stars_night_sky.jpg',
+        url: 'https://images.pexels.com/photos/1169751/pexels-photo-1169751.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Starry Night',
-        thumbnail: 'https://images.nasa.gov/images/stars_night_sky.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169751/pexels-photo-1169751.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 10,
-        url: 'https://images.nasa.gov/images/nebula_helix.jpg',
+        url: 'https://images.pexels.com/photos/1169752/pexels-photo-1169752.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Helix Nebula',
-        thumbnail: 'https://images.nasa.gov/images/nebula_helix.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169752/pexels-photo-1169752.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 11,
-        url: 'https://images.nasa.gov/images/cosmic_dust.jpg',
+        url: 'https://images.pexels.com/photos/1169753/pexels-photo-1169753.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Cosmic Dust',
-        thumbnail: 'https://images.nasa.gov/images/cosmic_dust.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169753/pexels-photo-1169753.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 12,
-        url: 'https://images.nasa.gov/images/galaxy_whirlpool.jpg',
+        url: 'https://images.pexels.com/photos/1169755/pexels-photo-1169755.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Whirlpool Galaxy',
-        thumbnail: 'https://images.nasa.gov/images/galaxy_whirlpool.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169755/pexels-photo-1169755.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 13,
-        url: 'https://images.nasa.gov/images/space_colors.jpg',
+        url: 'https://images.pexels.com/photos/1169756/pexels-photo-1169756.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Space Colors',
-        thumbnail: 'https://images.nasa.gov/images/space_colors.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169756/pexels-photo-1169756.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 14,
-        url: 'https://images.nasa.gov/images/star_cluster.jpg',
+        url: 'https://images.pexels.com/photos/1169757/pexels-photo-1169757.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Star Cluster',
-        thumbnail: 'https://images.nasa.gov/images/star_cluster.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169757/pexels-photo-1169757.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         id: 15,
-        url: 'https://images.nasa.gov/images/deep_universe.jpg',
+        url: 'https://images.pexels.com/photos/1169758/pexels-photo-1169758.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080',
         title: 'Deep Universe',
-        thumbnail: 'https://images.nasa.gov/images/deep_universe.jpg'
+        thumbnail: 'https://images.pexels.com/photos/1169758/pexels-photo-1169758.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -311,13 +311,15 @@ const WallpaperWidget: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [selectedWallpaper, setSelectedWallpaper] = useState<Wallpaper | null>(null)
   const [isAnimating, setIsAnimating] = useState(false)
-  const [position, setPosition] = useState({ x: window.innerWidth / 2 - 150, y: window.innerHeight / 2 - 100 })
+  const [position, setPosition] = useState({ x: window.innerWidth / 2 - 140, y: window.innerHeight / 2 - 100 })
   const [isDragging, setIsDragging] = useState(false)
   const [hasDragged, setHasDragged] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
-  const [showDragHandle, setShowDragHandle] = useState(false)
+  const [showDragHandle, setShowDragHandle] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
-  const wallpapersPerPage = 3
+  const [currentWallpaperIndex, setCurrentWallpaperIndex] = useState(0)
+  const [categoryWallpaperIndices, setCategoryWallpaperIndices] = useState<Record<string, number>>({})
+  const wallpapersPerPage = 2
   const widgetRef = useRef<HTMLDivElement>(null)
   const dragStartPos = useRef({ x: 0, y: 0 })
   const widgetStartPos = useRef({ x: 0, y: 0 })
@@ -335,9 +337,59 @@ const WallpaperWidget: React.FC = () => {
 
   const currentCategory = wallpaperCategories.find(cat => cat.id === selectedCategory)
   const totalPages = currentCategory ? Math.ceil(currentCategory.wallpapers.length / wallpapersPerPage) : 1
+  const totalWallpapers = currentCategory ? currentCategory.wallpapers.length : 0
 
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage)
+  }
+
+  const handleWallpaperChange = (direction: 'prev' | 'next', categoryId?: string) => {
+    if (!currentCategory) return;
+    
+    setIsTransitioning(true);
+    
+    // If a specific category is provided, use that instead of the current category
+    const targetCategory = categoryId 
+      ? wallpaperCategories.find(cat => cat.id === categoryId) 
+      : currentCategory;
+    
+    if (!targetCategory) return;
+    
+    const totalWallpapers = targetCategory.wallpapers.length;
+    const currentIndex = categoryId 
+      ? (categoryWallpaperIndices[categoryId] || 0) 
+      : currentWallpaperIndex;
+    
+    let newIndex;
+    if (direction === 'next') {
+      newIndex = (currentIndex + 1) % totalWallpapers;
+    } else {
+      newIndex = (currentIndex - 1 + totalWallpapers) % totalWallpapers;
+    }
+    
+    if (categoryId) {
+      // Update the index for the specific category
+      setCategoryWallpaperIndices(prev => ({
+        ...prev,
+        [categoryId]: newIndex
+      }));
+      
+      // Update the wallpaper if this is the current category
+      if (categoryId === selectedCategory) {
+        setCurrentWallpaperIndex(newIndex);
+        const newWallpaper = targetCategory.wallpapers[newIndex];
+        setSelectedWallpaper(newWallpaper);
+        document.body.style.backgroundImage = `url(${newWallpaper.url})`;
+      }
+    } else {
+      // Update the current wallpaper index
+      setCurrentWallpaperIndex(newIndex);
+      const newWallpaper = targetCategory.wallpapers[newIndex];
+      setSelectedWallpaper(newWallpaper);
+      document.body.style.backgroundImage = `url(${newWallpaper.url})`;
+    }
+    
+    setTimeout(() => setIsTransitioning(false), 500);
   }
 
   const getCurrentPageWallpapers = () => {
@@ -372,31 +424,6 @@ const WallpaperWidget: React.FC = () => {
       if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
         setHasDragged(true)
       }
-    } else if (widgetRef.current) {
-      // Check if mouse is within proximity of the widget
-      const rect = widgetRef.current.getBoundingClientRect()
-      const proximityDistance = 50 // pixels
-      
-      const isNearWidget = 
-        e.clientX >= rect.left - proximityDistance &&
-        e.clientX <= rect.right + proximityDistance &&
-        e.clientY >= rect.top - proximityDistance &&
-        e.clientY <= rect.bottom + proximityDistance
-      
-      if (isNearWidget) {
-        setShowDragHandle(true)
-        
-        // Clear any existing timeout
-        if (proximityTimeout.current !== null) {
-          window.clearTimeout(proximityTimeout.current)
-          proximityTimeout.current = null
-        }
-      } else if (!isHovering) {
-        // Set a timeout to hide the drag handle if not hovering
-        proximityTimeout.current = window.setTimeout(() => {
-          setShowDragHandle(false)
-        }, 500)
-      }
     }
   }
 
@@ -425,9 +452,10 @@ const WallpaperWidget: React.FC = () => {
       document.removeEventListener('mouseup', handleMouseUp)
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [isDragging])
+  }, [isDragging, isExpanded])
 
-  const handleExpand = () => {
+  const handleExpand = (e: React.MouseEvent) => {
+    e.stopPropagation();
     if (!isExpanded && !isAnimating && !hasDragged) {
       setIsAnimating(true)
       setIsExpanded(true)
@@ -437,11 +465,27 @@ const WallpaperWidget: React.FC = () => {
   }
 
   const handleMouseDown = (e: React.MouseEvent) => {
-    // Only allow dragging from the drag handle
+    // Check if the click is on the drag handle
     const target = e.target as HTMLElement
-    const isDragHandle = target.className === 'drag-handle' || target.closest('.drag-handle')
+    const isDragHandle = target.closest('.drag-handle-new')
     
-    if (isDragHandle) {
+    // Allow dragging from the drag handle or the entire widget in compact mode
+    if (isDragHandle || !isExpanded) {
+      e.preventDefault()
+      setIsDragging(true)
+      setHasDragged(false)
+      
+      dragStartPos.current = { x: e.clientX, y: e.clientY }
+      widgetStartPos.current = { x: position.x, y: position.y }
+      return
+    }
+    
+    // For expanded mode, only allow dragging from the top area
+    const isTopArea = target.closest('.widget-header') || 
+                      target.closest('.current-category') ||
+                      target.closest('.current-wallpaper-preview')
+    
+    if (isTopArea) {
       e.preventDefault()
       setIsDragging(true)
       setHasDragged(false)
@@ -458,6 +502,29 @@ const WallpaperWidget: React.FC = () => {
     setIsExpanded(false);
   }
 
+  const handleCategorySelect = (categoryId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    
+    // Get the current index for this category
+    const currentIndex = categoryWallpaperIndices[categoryId] || 0;
+    
+    // Find the category and the wallpaper at the current index
+    const category = wallpaperCategories.find(cat => cat.id === categoryId);
+    if (category) {
+      const wallpaper = category.wallpapers[currentIndex];
+      
+      // Update the selected category and wallpaper
+      setSelectedCategory(categoryId);
+      setSelectedWallpaper(wallpaper);
+      setCurrentWallpaperIndex(currentIndex);
+      
+      // Apply the wallpaper to the background
+      document.body.style.backgroundImage = `url(${wallpaper.url})`;
+      
+      // Reset to first page
+      setCurrentPage(1);
+    }
+  }
 
   return (
     <div 
@@ -467,21 +534,9 @@ const WallpaperWidget: React.FC = () => {
       onMouseDown={handleMouseDown}
       onMouseEnter={() => {
         setIsHovering(true)
-        setShowDragHandle(true)
-        
-        // Clear any existing timeout
-        if (proximityTimeout.current !== null) {
-          window.clearTimeout(proximityTimeout.current)
-          proximityTimeout.current = null
-        }
       }}
       onMouseLeave={() => {
         setIsHovering(false)
-        
-        // Set a timeout to hide the drag handle
-        proximityTimeout.current = window.setTimeout(() => {
-          setShowDragHandle(false)
-        }, 500)
       }}
       style={{
         transform: isAnimating ? 'scale(0.95)' : 'scale(1)',
@@ -491,23 +546,52 @@ const WallpaperWidget: React.FC = () => {
         transition: isDragging ? 'none' : 'all 0.2s ease'
       }}
     >
-      {showDragHandle && (
-        <div className="drag-handle">
-          <div className="drag-handle-icon"></div>
-        </div>
-      )}
+      {/* New drag handle */}
+      <div className="drag-handle-new">
+        <div className="drag-handle-indicator"></div>
+      </div>
       
       {!isExpanded ? (
         <div className="compact-content">
-          <div className="current-wallpaper">
+          <div className="compact-wallpaper-preview">
             <img src={selectedWallpaper?.thumbnail || selectedWallpaper?.url} alt={selectedWallpaper?.title} />
+            <div className="compact-overlay">
+              <span className="compact-category">{currentCategory?.name}</span>
+              <span className="compact-title">{selectedWallpaper?.title}</span>
+            </div>
           </div>
-          <div className="wallpaper-info">
-            <span className="category-name">{currentCategory?.name}</span>
-            <span className="wallpaper-title">{selectedWallpaper?.title}</span>
+          <div className="compact-navigation">
+            <button 
+              className="nav-button prev-button" 
+              onClick={(e) => {
+                e.stopPropagation();
+                handleWallpaperChange('prev');
+              }}
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button 
+              className="nav-button next-button" 
+              onClick={(e) => {
+                e.stopPropagation();
+                handleWallpaperChange('next');
+              }}
+            >
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" strokeWidth="2" fill="none">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
           </div>
-          <button className="shuffle-button" onClick={shuffleWallpaper}>
-            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none">
+          <button 
+            className="shuffle-button-new" 
+            onClick={(e) => {
+              e.stopPropagation();
+              shuffleWallpaper();
+            }}
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none">
               <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
               <path d="M3.3 7l8.7 5 8.7-5" />
               <path d="M12 22V12" />
@@ -519,65 +603,92 @@ const WallpaperWidget: React.FC = () => {
           <div className="widget-header">
             <h2>Wallpaper</h2>
           </div>
-          <div className="categories-tabs">
-            {wallpaperCategories.map(category => (
-              <button
-                key={category.id}
-                className={`category-tab ${selectedCategory === category.id ? 'active' : ''}`}
-                onClick={(e) => {
-                  e.stopPropagation()
-                  setSelectedCategory(category.id)
-                  setCurrentPage(1)
-                }}
-              >
-                {category.name}
-              </button>
-            ))}
+          
+          <div className="current-category">
+            <h3>{currentCategory?.name}</h3>
+            <span className="wallpaper-count">{currentCategory?.wallpapers.length} wallpapers</span>
           </div>
-
-          <div className="wallpapers-grid">
-            {getCurrentPageWallpapers().map(wallpaper => (
-              <div
-                key={wallpaper.id}
-                className="wallpaper-item"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  handleWallpaperSelect(wallpaper)
-                }}
-              >
-                <img src={wallpaper.thumbnail || wallpaper.url} alt={wallpaper.title} />
-                <div className="wallpaper-overlay">
-                  <span>{wallpaper.title}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {totalPages > 1 && (
-            <div className="pagination">
+          
+          <div className="current-wallpaper-preview">
+            <img src={selectedWallpaper?.thumbnail || selectedWallpaper?.url} alt={selectedWallpaper?.title} />
+            <div className="current-wallpaper-overlay">
+              <span className="current-wallpaper-title">{selectedWallpaper?.title}</span>
+            </div>
+            <div className="wallpaper-navigation">
               <button 
-                className="page-button"
+                className="nav-button prev-button" 
                 onClick={(e) => {
-                  e.stopPropagation()
-                  if (currentPage > 1) handlePageChange(currentPage - 1)
+                  e.stopPropagation();
+                  handleWallpaperChange('prev');
                 }}
-                disabled={currentPage === 1}
               >
-                ←
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
               </button>
-              <span className="page-info">{currentPage} / {totalPages}</span>
+              <span className="wallpaper-counter">{currentWallpaperIndex + 1} / {totalWallpapers}</span>
               <button 
-                className="page-button"
+                className="nav-button next-button" 
                 onClick={(e) => {
-                  e.stopPropagation()
-                  if (currentPage < totalPages) handlePageChange(currentPage + 1)
+                  e.stopPropagation();
+                  handleWallpaperChange('next');
                 }}
-                disabled={currentPage === totalPages}
               >
-                →
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
               </button>
             </div>
-          )}
+          </div>
+
+          <div className="collections-section">
+            <h3>Collections</h3>
+            <div className="categories-list">
+              {wallpaperCategories.map(category => (
+                <div
+                  key={category.id}
+                  className={`category-preview ${selectedCategory === category.id ? 'active' : ''}`}
+                  onClick={(e) => handleCategorySelect(category.id, e)}
+                >
+                  <div className="category-preview-image">
+                    <img 
+                      src={category.wallpapers[categoryWallpaperIndices[category.id] || 0]?.thumbnail || 
+                           category.wallpapers[categoryWallpaperIndices[category.id] || 0]?.url} 
+                      alt={category.name} 
+                    />
+                  </div>
+                  <div className="category-preview-overlay">
+                    <span className="category-preview-name">{category.name}</span>
+                    <span className="category-preview-count">{category.wallpapers.length} wallpapers</span>
+                  </div>
+                  <div className="category-navigation">
+                    <button 
+                      className="nav-button prev-button" 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleWallpaperChange('prev', category.id);
+                      }}
+                    >
+                      <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none">
+                        <path d="M15 18l-6-6 6-6" />
+                      </svg>
+                    </button>
+                    <button 
+                      className="nav-button next-button" 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleWallpaperChange('next', category.id);
+                      }}
+                    >
+                      <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" strokeWidth="2" fill="none">
+                        <path d="M9 18l6-6-6-6" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </>
       )}
     </div>
