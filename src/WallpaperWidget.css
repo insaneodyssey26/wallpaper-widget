@@ -30,24 +30,26 @@
   height: auto;
   max-height: 70vh;
   padding: 16px;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   transform: scale(1);
   transform-origin: top;
   animation: expandDown 0.3s ease forwards;
   width: 360px;
 }
 
-/* Remove scrollbar styles */
+/* Restore scrollbar styles */
 .wallpaper-widget.expanded::-webkit-scrollbar {
-  display: none;
+  width: 4px;
 }
 
 .wallpaper-widget.expanded::-webkit-scrollbar-track {
-  display: none;
+  background: transparent;
 }
 
 .wallpaper-widget.expanded::-webkit-scrollbar-thumb {
-  display: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
 }
 
 @keyframes expandDown {
