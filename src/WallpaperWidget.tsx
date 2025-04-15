@@ -345,35 +345,35 @@ const WallpaperWidget: React.FC = () => {
 
   const handleWallpaperChange = (direction: 'prev' | 'next', categoryId?: string) => {
     if (!currentCategory) return;
-    
+
     setIsTransitioning(true);
-    
+
     // If a specific category is provided, use that instead of the current category
-    const targetCategory = categoryId 
-      ? wallpaperCategories.find(cat => cat.id === categoryId) 
+    const targetCategory = categoryId
+      ? wallpaperCategories.find(cat => cat.id === categoryId)
       : currentCategory;
-    
+
     if (!targetCategory) return;
-    
+
     const totalWallpapers = targetCategory.wallpapers.length;
-    const currentIndex = categoryId 
-      ? (categoryWallpaperIndices[categoryId] || 0) 
+    const currentIndex = categoryId
+      ? (categoryWallpaperIndices[categoryId] || 0)
       : currentWallpaperIndex;
-    
+
     let newIndex;
     if (direction === 'next') {
       newIndex = (currentIndex + 1) % totalWallpapers;
     } else {
       newIndex = (currentIndex - 1 + totalWallpapers) % totalWallpapers;
     }
-    
+
     if (categoryId) {
       // Update the index for the specific category
       setCategoryWallpaperIndices(prev => ({
         ...prev,
         [categoryId]: newIndex
       }));
-      
+
       // Update the wallpaper if this is the current category
       if (categoryId === selectedCategory) {
         setCurrentWallpaperIndex(newIndex);
@@ -388,7 +388,7 @@ const WallpaperWidget: React.FC = () => {
       setSelectedWallpaper(newWallpaper);
       document.body.style.backgroundImage = `url(${newWallpaper.url})`;
     }
-    
+
     setTimeout(() => setIsTransitioning(false), 500);
   }
 
@@ -414,13 +414,13 @@ const WallpaperWidget: React.FC = () => {
     if (isDragging) {
       const dx = e.clientX - dragStartPos.current.x
       const dy = e.clientY - dragStartPos.current.y
-      
+
       const newX = widgetStartPos.current.x + dx
       const newY = widgetStartPos.current.y + dy
-      
+
       // Update position directly for smooth dragging
       setPosition({ x: newX, y: newY })
-      
+
       if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
         setHasDragged(true)
       }
@@ -468,28 +468,28 @@ const WallpaperWidget: React.FC = () => {
     // Check if the click is on the drag handle
     const target = e.target as HTMLElement
     const isDragHandle = target.closest('.drag-handle-new')
-    
+
     // Allow dragging from the drag handle or the entire widget in compact mode
     if (isDragHandle || !isExpanded) {
       e.preventDefault()
       setIsDragging(true)
       setHasDragged(false)
-      
+
       dragStartPos.current = { x: e.clientX, y: e.clientY }
       widgetStartPos.current = { x: position.x, y: position.y }
       return
     }
-    
+
     // For expanded mode, only allow dragging from the top area
-    const isTopArea = target.closest('.widget-header') || 
-                      target.closest('.current-category') ||
-                      target.closest('.current-wallpaper-preview')
-    
+    const isTopArea = target.closest('.widget-header') ||
+      target.closest('.current-category') ||
+      target.closest('.current-wallpaper-preview')
+
     if (isTopArea) {
       e.preventDefault()
       setIsDragging(true)
       setHasDragged(false)
-      
+
       dragStartPos.current = { x: e.clientX, y: e.clientY }
       widgetStartPos.current = { x: position.x, y: position.y }
     }
@@ -504,30 +504,30 @@ const WallpaperWidget: React.FC = () => {
 
   const handleCategorySelect = (categoryId: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    
+
     // Get the current index for this category
     const currentIndex = categoryWallpaperIndices[categoryId] || 0;
-    
+
     // Find the category and the wallpaper at the current index
     const category = wallpaperCategories.find(cat => cat.id === categoryId);
     if (category) {
       const wallpaper = category.wallpapers[currentIndex];
-      
+
       // Update the selected category and wallpaper
       setSelectedCategory(categoryId);
       setSelectedWallpaper(wallpaper);
       setCurrentWallpaperIndex(currentIndex);
-      
+
       // Apply the wallpaper to the background
       document.body.style.backgroundImage = `url(${wallpaper.url})`;
-      
+
       // Reset to first page
       setCurrentPage(1);
     }
   }
 
   return (
-    <div 
+    <div
       ref={widgetRef}
       className={`wallpaper-widget ${isExpanded ? 'expanded' : 'compact'} ${isTransitioning ? 'transitioning' : ''}`}
       onClick={handleExpand}
@@ -550,19 +550,18 @@ const WallpaperWidget: React.FC = () => {
       <div className="drag-handle-new">
         <div className="drag-handle-indicator"></div>
       </div>
-      
+
       {!isExpanded ? (
         <div className="compact-content">
           <div className="compact-wallpaper-preview">
             <img src={selectedWallpaper?.thumbnail || selectedWallpaper?.url} alt={selectedWallpaper?.title} />
             <div className="compact-overlay">
               <span className="compact-category">{currentCategory?.name}</span>
-              <span className="compact-title">{selectedWallpaper?.title}</span>
             </div>
           </div>
           <div className="compact-navigation">
-            <button 
-              className="nav-button prev-button" 
+            <button
+              className="nav-button prev-button"
               onClick={(e) => {
                 e.stopPropagation();
                 handleWallpaperChange('prev');
@@ -572,8 +571,8 @@ const WallpaperWidget: React.FC = () => {
                 <path d="M15 18l-6-6 6-6" />
               </svg>
             </button>
-            <button 
-              className="nav-button next-button" 
+            <button
+              className="nav-button next-button"
               onClick={(e) => {
                 e.stopPropagation();
                 handleWallpaperChange('next');
@@ -584,8 +583,8 @@ const WallpaperWidget: React.FC = () => {
               </svg>
             </button>
           </div>
-          <button 
-            className="shuffle-button-new" 
+          <button
+            className="shuffle-button-new"
             onClick={(e) => {
               e.stopPropagation();
               shuffleWallpaper();
@@ -603,41 +602,14 @@ const WallpaperWidget: React.FC = () => {
           <div className="widget-header">
             <h2>Wallpaper</h2>
           </div>
-          
+
           <div className="current-category">
             <h3>{currentCategory?.name}</h3>
-            <span className="wallpaper-count">{currentCategory?.wallpapers.length} wallpapers</span>
           </div>
-          
+
           <div className="current-wallpaper-preview">
             <img src={selectedWallpaper?.thumbnail || selectedWallpaper?.url} alt={selectedWallpaper?.title} />
             <div className="current-wallpaper-overlay">
-              <span className="current-wallpaper-title">{selectedWallpaper?.title}</span>
-            </div>
-            <div className="wallpaper-navigation">
-              <button 
-                className="nav-button prev-button" 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleWallpaperChange('prev');
-                }}
-              >
-                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none">
-                  <path d="M15 18l-6-6 6-6" />
-                </svg>
-              </button>
-              <span className="wallpaper-counter">{currentWallpaperIndex + 1} / {totalWallpapers}</span>
-              <button 
-                className="nav-button next-button" 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleWallpaperChange('next');
-                }}
-              >
-                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2" fill="none">
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
-              </button>
             </div>
           </div>
 
@@ -651,19 +623,18 @@ const WallpaperWidget: React.FC = () => {
                   onClick={(e) => handleCategorySelect(category.id, e)}
                 >
                   <div className="category-preview-image">
-                    <img 
-                      src={category.wallpapers[categoryWallpaperIndices[category.id] || 0]?.thumbnail || 
-                           category.wallpapers[categoryWallpaperIndices[category.id] || 0]?.url} 
-                      alt={category.name} 
+                    <img
+                      src={category.wallpapers[categoryWallpaperIndices[category.id] || 0]?.thumbnail ||
+                        category.wallpapers[categoryWallpaperIndices[category.id] || 0]?.url}
+                      alt={category.name}
                     />
                   </div>
                   <div className="category-preview-overlay">
                     <span className="category-preview-name">{category.name}</span>
-                    <span className="category-preview-count">{category.wallpapers.length} wallpapers</span>
                   </div>
                   <div className="category-navigation">
-                    <button 
-                      className="nav-button prev-button" 
+                    <button
+                      className="nav-button prev-button"
                       onClick={(e) => {
                         e.stopPropagation();
                         handleWallpaperChange('prev', category.id);
@@ -673,8 +644,8 @@ const WallpaperWidget: React.FC = () => {
                         <path d="M15 18l-6-6 6-6" />
                       </svg>
                     </button>
-                    <button 
-                      className="nav-button next-button" 
+                    <button
+                      className="nav-button next-button"
                       onClick={(e) => {
                         e.stopPropagation();
                         handleWallpaperChange('next', category.id);

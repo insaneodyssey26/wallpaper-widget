@@ -2,7 +2,7 @@
   position: fixed;
   background: rgba(20, 20, 25, 0.85);
   backdrop-filter: blur(10px);
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 1000;
@@ -10,19 +10,19 @@
   user-select: none;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 360px;
+  width: 340px;
   padding-top: 8px;
 }
 
 .wallpaper-widget.compact {
-  height: 120px;
+  height: 140px;
   cursor: grab;
   padding: 0;
   transform: scale(1);
   background: rgba(20, 20, 25, 0.7);
   overflow: hidden;
-  border-radius: 12px;
-  width: 360px;
+  border-radius: 8px;
+  width: 340px;
   margin-top: 24px;
 }
 
@@ -30,26 +30,24 @@
   height: auto;
   max-height: 70vh;
   padding: 16px;
-  overflow-y: auto;
+  overflow: hidden;
   transform: scale(1);
   transform-origin: top;
   animation: expandDown 0.3s ease forwards;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
   width: 360px;
 }
 
+/* Remove scrollbar styles */
 .wallpaper-widget.expanded::-webkit-scrollbar {
-  width: 4px;
+  display: none;
 }
 
 .wallpaper-widget.expanded::-webkit-scrollbar-track {
-  background: transparent;
+  display: none;
 }
 
 .wallpaper-widget.expanded::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
+  display: none;
 }
 
 @keyframes expandDown {
@@ -58,6 +56,7 @@
     transform: translateY(-20px);
     max-height: 80px;
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -97,14 +96,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, 
-    rgba(0, 0, 0, 0.7) 0%, 
-    rgba(0, 0, 0, 0.3) 50%, 
-    rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.7) 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 12px;
+  justify-content: flex-end;
+  padding: 16px;
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }
@@ -115,13 +114,41 @@
 
 .compact-category {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 6px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  padding-bottom: 8px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.compact-category::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.wallpaper-widget.compact:hover .compact-category {
+  transform: translateY(-2px);
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2.5px;
+}
+
+.wallpaper-widget.compact:hover .compact-category::after {
+  transform: scaleX(1);
+  width: 60px;
 }
 
 .compact-title {
@@ -473,10 +500,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, 
-    rgba(255, 255, 255, 0) 0%, 
-    rgba(255, 255, 255, 0.8) 50%, 
-    rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 100%);
   animation: shimmer 2s infinite;
 }
 
@@ -484,6 +511,7 @@ body {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -592,10 +620,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, 
-    rgba(0, 0, 0, 0.7) 0%, 
-    rgba(0, 0, 0, 0.3) 50%, 
-    rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.7) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -768,24 +796,24 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 20;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .shuffle-button-new:hover {
   background: rgba(255, 255, 255, 0.25);
-  transform: translateY(-2px);
+  transform: translateY(-2px) rotate(180deg);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .shuffle-button-new:active {
-  transform: translateY(0);
+  transform: translateY(0) rotate(180deg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .shuffle-button-new svg {
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .shuffle-button-new:hover svg {
@@ -794,4 +822,4 @@ body {
 
 .shuffle-button-new span {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-} 
+}
