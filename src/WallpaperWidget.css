@@ -277,59 +277,11 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
-.wallpapers-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.wallpaper-item {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  aspect-ratio: 16/9;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.wallpaper-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.wallpaper-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.wallpaper-item:hover img {
-  transform: scale(1.05);
-}
-
+/* Remove wallpapers grid styles */
+.wallpapers-grid,
+.wallpaper-item,
 .wallpaper-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  padding: 12px;
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 0.85rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-weight: 500;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.wallpaper-item:hover .wallpaper-overlay {
-  opacity: 1;
+  display: none;
 }
 
 /* Compact state specific styles */
@@ -753,32 +705,78 @@ body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Remove unnecessary navigation styles */
 .wallpaper-navigation {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 12px;
-  z-index: 10;
+  display: none;
 }
 
 .wallpaper-counter {
-  background: rgba(0, 0, 0, 0.4);
-  color: rgba(255, 255, 255, 0.9);
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  backdrop-filter: blur(4px);
+  display: none;
 }
 
-.wallpaper-widget.transitioning .current-wallpaper-preview img,
-.wallpaper-widget.transitioning .compact-wallpaper-preview img {
-  opacity: 0.7;
-  transform: scale(1.05);
+/* Clean up the expanded view */
+.wallpapers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.wallpaper-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 16/9;
+}
+
+.wallpaper-item img,
+.wallpaper-preview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wallpaper-preview-video {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.wallpaper-item:hover .wallpaper-preview-video {
+  opacity: 1;
+}
+
+.wallpaper-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.wallpaper-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.wallpaper-item:hover .wallpaper-overlay {
+  opacity: 1;
 }
 
 .shuffle-button-new {
@@ -824,4 +822,46 @@ body {
 
 .shuffle-button-new span {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.wallpaper-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.wallpaper-preview-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wallpaper-item:hover .wallpaper-preview-video {
+  opacity: 1;
 }

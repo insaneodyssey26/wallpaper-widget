@@ -303,6 +303,102 @@ const wallpaperCategories: WallpaperCategory[] = [
         thumbnail: 'https://images.pexels.com/photos/325590/pexels-photo-325590.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
+  },
+  {
+    id: 'videos',
+    name: 'Live Wallpapers',
+    wallpapers: [
+      {
+        id: 1,
+        url: 'https://cdn.pixabay.com/vimeo/328741711/ocean-24216.mp4?width=1920&hash=f721c7ec8f494e7f9c8c2992d5f27b97a0c3bfb4',
+        title: 'Ocean Waves',
+        thumbnail: 'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 2,
+        url: 'https://cdn.pixabay.com/vimeo/414800870/cherry-blossoms-35802.mp4?width=1920&hash=4c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Cherry Blossoms',
+        thumbnail: 'https://images.pexels.com/photos/1418595/pexels-photo-1418595.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 3,
+        url: 'https://cdn.pixabay.com/vimeo/476996920/clouds-50122.mp4?width=1920&hash=7c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Moving Clouds',
+        thumbnail: 'https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 4,
+        url: 'https://cdn.pixabay.com/vimeo/439005057/rain-38569.mp4?width=1920&hash=8c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Rainfall',
+        thumbnail: 'https://images.pexels.com/photos/125510/pexels-photo-125510.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 5,
+        url: 'https://cdn.pixabay.com/vimeo/499162150/aurora-53442.mp4?width=1920&hash=9c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Aurora Borealis',
+        thumbnail: 'https://images.pexels.com/photos/2113554/pexels-photo-2113554.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 6,
+        url: 'https://cdn.pixabay.com/vimeo/384844427/forest-stream-31377.mp4?width=1920&hash=2c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Forest Stream',
+        thumbnail: 'https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 7,
+        url: 'https://cdn.pixabay.com/vimeo/531646844/space-57889.mp4?width=1920&hash=3c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Space Journey',
+        thumbnail: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 8,
+        url: 'https://cdn.pixabay.com/vimeo/404237096/sunset-lake-34455.mp4?width=1920&hash=4c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Sunset Lake',
+        thumbnail: 'https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 9,
+        url: 'https://cdn.pixabay.com/vimeo/446608753/fireplace-39876.mp4?width=1920&hash=5c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Cozy Fireplace',
+        thumbnail: 'https://images.pexels.com/photos/1749/fire-orange-emergency-burning.jpg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 10,
+        url: 'https://cdn.pixabay.com/vimeo/392898142/tropical-beach-32455.mp4?width=1920&hash=6c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Tropical Beach',
+        thumbnail: 'https://images.pexels.com/photos/1021073/pexels-photo-1021073.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 11,
+        url: 'https://cdn.pixabay.com/vimeo/473859094/meadow-49755.mp4?width=1920&hash=7c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Windswept Meadow',
+        thumbnail: 'https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 12,
+        url: 'https://cdn.pixabay.com/vimeo/454563094/ink-flow-41234.mp4?width=1920&hash=8c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Ink Flow',
+        thumbnail: 'https://images.pexels.com/photos/3699259/pexels-photo-3699259.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 13,
+        url: 'https://cdn.pixabay.com/vimeo/492837150/snowfall-52455.mp4?width=1920&hash=9c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Snowfall',
+        thumbnail: 'https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 14,
+        url: 'https://cdn.pixabay.com/vimeo/465892094/city-lights-44566.mp4?width=1920&hash=1c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'City Lights',
+        thumbnail: 'https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      },
+      {
+        id: 15,
+        url: 'https://cdn.pixabay.com/vimeo/484563094/autumn-51234.mp4?width=1920&hash=2c3f1e4e42f6e8e01c0f78f503a4d3a2c0d3f9b5',
+        title: 'Autumn Leaves',
+        thumbnail: 'https://images.pexels.com/photos/1808329/pexels-photo-1808329.jpeg?auto=compress&cs=tinysrgb&w=1920'
+      }
+    ]
   }
 ]
 
@@ -321,10 +417,12 @@ const WallpaperWidget: React.FC = () => {
   const [categoryWallpaperIndices, setCategoryWallpaperIndices] = useState<Record<string, number>>({})
   const wallpapersPerPage = 2
   const widgetRef = useRef<HTMLDivElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
   const dragStartPos = useRef({ x: 0, y: 0 })
   const widgetStartPos = useRef({ x: 0, y: 0 })
   const proximityTimeout = useRef<number | null>(null)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const [hoveredVideo, setHoveredVideo] = useState<string | null>(null)
 
   // Apply default wallpaper on mount
   useEffect(() => {
@@ -332,8 +430,54 @@ const WallpaperWidget: React.FC = () => {
     const defaultWallpaper = defaultCategory.wallpapers[0]
     setSelectedCategory(defaultCategory.id)
     setSelectedWallpaper(defaultWallpaper)
-    document.body.style.backgroundImage = `url(${defaultWallpaper.url})`
+    applyWallpaper(defaultWallpaper.url)
   }, [])
+
+  const applyWallpaper = (url: string) => {
+    // Remove any existing video elements
+    const existingVideo = document.querySelector('.wallpaper-video') as HTMLVideoElement;
+    if (existingVideo) {
+      existingVideo.remove();
+    }
+
+    if (url.includes('.mp4')) {
+      // Create and configure video element
+      const video = document.createElement('video');
+      video.className = 'wallpaper-video';
+      video.src = url;
+      video.autoplay = true;
+      video.loop = true;
+      video.muted = true;
+      video.playsInline = true;
+      video.style.position = 'fixed';
+      video.style.right = '0';
+      video.style.bottom = '0';
+      video.style.minWidth = '100%';
+      video.style.minHeight = '100%';
+      video.style.width = 'auto';
+      video.style.height = 'auto';
+      video.style.zIndex = '-1';
+      video.style.objectFit = 'cover';
+      video.style.transition = 'opacity 0.5s ease-in-out';
+
+      // Add video to body
+      document.body.appendChild(video);
+
+      // Clear any existing background
+      document.body.style.backgroundImage = '';
+
+      // Ensure video starts playing
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.error('Error playing video:', error);
+        });
+      }
+    } else {
+      // Handle image wallpapers
+      document.body.style.backgroundImage = `url(${url})`;
+    }
+  };
 
   const currentCategory = wallpaperCategories.find(cat => cat.id === selectedCategory)
   const totalPages = currentCategory ? Math.ceil(currentCategory.wallpapers.length / wallpapersPerPage) : 1
@@ -379,14 +523,14 @@ const WallpaperWidget: React.FC = () => {
         setCurrentWallpaperIndex(newIndex);
         const newWallpaper = targetCategory.wallpapers[newIndex];
         setSelectedWallpaper(newWallpaper);
-        document.body.style.backgroundImage = `url(${newWallpaper.url})`;
+        applyWallpaper(newWallpaper.url);
       }
     } else {
       // Update the current wallpaper index
       setCurrentWallpaperIndex(newIndex);
       const newWallpaper = targetCategory.wallpapers[newIndex];
       setSelectedWallpaper(newWallpaper);
-      document.body.style.backgroundImage = `url(${newWallpaper.url})`;
+      applyWallpaper(newWallpaper.url);
     }
 
     setTimeout(() => setIsTransitioning(false), 500);
@@ -405,7 +549,7 @@ const WallpaperWidget: React.FC = () => {
     const randomWallpaper = randomCategory.wallpapers[Math.floor(Math.random() * randomCategory.wallpapers.length)];
     setSelectedCategory(randomCategory.id);
     setSelectedWallpaper(randomWallpaper);
-    document.body.style.backgroundImage = `url(${randomWallpaper.url})`;
+    applyWallpaper(randomWallpaper.url);
     setTimeout(() => setIsTransitioning(false), 500);
   };
 
@@ -495,11 +639,42 @@ const WallpaperWidget: React.FC = () => {
     }
   }
 
-  const handleWallpaperSelect = (wallpaper: typeof selectedWallpaper) => {
+  const handleWallpaperSelect = (wallpaper: Wallpaper) => {
     if (!wallpaper) return;
     setSelectedWallpaper(wallpaper);
-    document.body.style.backgroundImage = `url(${wallpaper.url})`;
+    applyWallpaper(wallpaper.url);
     setIsExpanded(false);
+  }
+
+  const handleWallpaperHover = (url: string) => {
+    if (url.includes('.mp4')) {
+      const previewVideo = document.createElement('video');
+      previewVideo.className = 'wallpaper-preview-video';
+      previewVideo.src = url;
+      previewVideo.autoplay = true;
+      previewVideo.loop = true;
+      previewVideo.muted = true;
+      previewVideo.playsInline = true;
+      previewVideo.style.width = '100%';
+      previewVideo.style.height = '100%';
+      previewVideo.style.objectFit = 'cover';
+      previewVideo.style.position = 'absolute';
+      previewVideo.style.top = '0';
+      previewVideo.style.left = '0';
+      previewVideo.style.zIndex = '1';
+
+      const container = document.querySelector('.wallpaper-preview-container');
+      if (container) {
+        container.appendChild(previewVideo);
+      }
+    }
+  }
+
+  const handleWallpaperLeave = () => {
+    const previewVideo = document.querySelector('.wallpaper-preview-video');
+    if (previewVideo) {
+      previewVideo.remove();
+    }
   }
 
   const handleCategorySelect = (categoryId: string, e: React.MouseEvent) => {
@@ -519,7 +694,7 @@ const WallpaperWidget: React.FC = () => {
       setCurrentWallpaperIndex(currentIndex);
 
       // Apply the wallpaper to the background
-      document.body.style.backgroundImage = `url(${wallpaper.url})`;
+      applyWallpaper(wallpaper.url);
 
       // Reset to first page
       setCurrentPage(1);
